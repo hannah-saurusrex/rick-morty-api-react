@@ -1,1 +1,0 @@
-# rick-morty-api-react
