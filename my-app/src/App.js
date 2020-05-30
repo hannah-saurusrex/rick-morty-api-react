@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 const axios = require('axios');
 
-const App = props => {
+const App = () => {
 
   const [characters, setCharacters] = useState([]);
 
@@ -20,7 +20,8 @@ const App = props => {
       {characters.length > 0 ?
         <div className="characters">
           {characters.map(character => (
-            <div className="single-character" style={{backgroundImage: `url(${character.image})`}}>
+            <div className="single-character" 
+              style={{backgroundImage: `url(${character.image})`}}>
               <h3>{character.name}</h3>
             </div>
           ))}
